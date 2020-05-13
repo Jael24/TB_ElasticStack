@@ -1,5 +1,5 @@
 # TB_ElasticStack
-Repository for a complete working Elastic Stack pipeline (Filebeat - Logstash - Elasticsearch - Kibana). Running with Docker.
+Repository for a complete working Elastic Stack pipeline (Logstash - Elasticsearch - Kibana). Running with Docker.
 
 ## Running the Elastic Stack
 
