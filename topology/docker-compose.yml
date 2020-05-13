@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+
+  elasticsearch:
+    container_name: elsearch
+    build: ../images/elasticsearch
+    environment:
+            discovery.type: "single-node"
+    ports:
+      - 9200:9200
+      - 9300:9300
+
+  kibana:
+    container_name: kib
+    build: ../images/kibana
+    links: 
+      - "elasticsearch"
+    ports:
+     - 5601:5601
+
