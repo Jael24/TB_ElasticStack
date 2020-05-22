@@ -26,6 +26,7 @@ services:
     build: ../images/logstash
     ports:
       - 5044:5044
+      - 5045:5045
     depends_on:
       - elasticsearch
       - kibana
