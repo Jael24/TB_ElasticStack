@@ -1,1 +1,2 @@
-FROM docker.elastic.co/kibana/kibana:7.6.2
+ARG elastic_version
+FROM docker.elastic.co/kibana/kibana:${elastic_version}

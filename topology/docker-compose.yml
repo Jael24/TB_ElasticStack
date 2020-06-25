@@ -4,7 +4,10 @@ services:
 
   elasticsearch:
     container_name: elsearch
-    build: ../images/elasticsearch
+    build: 
+            context: ../images/elasticsearch
+            args: 
+                    elastic_version: 7.8.0
     environment:
             discovery.type: "single-node"
     ports:
@@ -13,7 +16,10 @@ services:
 
   kibana:
     container_name: kib
-    build: ../images/kibana
+    build:
+            context: ../images/kibana
+            args:
+                    elastic_version: 7.8.0
     links: 
       - "elasticsearch"
     ports:
@@ -23,7 +29,10 @@ services:
 
   logstash:
     container_name: logst
-    build: ../images/logstash
+    build:
+            context: ../images/logstash
+            args:
+                    elastic_version: 7.8.0
     ports:
       - 5044:5044
       - 5045:5045
