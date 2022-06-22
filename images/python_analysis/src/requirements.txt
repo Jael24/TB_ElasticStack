@@ -7,7 +7,7 @@ kiwisolver==1.2.0
 matplotlib==3.2.2
 mlxtend==0.17.2
 nose==1.3.7
-numpy==1.19.0
+numpy==1.22.0
 pandas==1.0.5
 patsy==0.5.1
 pyculiar==0.0.5
